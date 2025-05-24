@@ -1,0 +1,1 @@
+after HS fix, lower weapons max to 0

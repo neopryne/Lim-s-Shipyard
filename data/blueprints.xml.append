@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<shipBlueprint name="PLAYER_SHIP_FFF_CARGO_FREIGHTER" layout="cargo_freighter" img="cargo_freighter">
+	<class>HF Class Cargo Hauler</class>
+	<name>Ender Driven</name>
+	<desc>A civilian trade vessel has found itself in the middle of a multiversal conflict.  Ill-equipped for combat, it will have to get by with what it knows best: ccccccommerce.</desc>
+	<systemList>
+		<battery power="1" room="2" start="false" img="room_battery" />
+		<cloaking power="1" room="9" start="false" img="room_cloaking" />
+		<clonebay power="1" room="3" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="13" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" max="8" room="12" start="true" img="room_drones" />
+		<engines power="4" room="6" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="11" start="false" img="room_hacking" />
+		<medbay power="1" room="3" start="true" img="room_medbay">
+			<slot>
+				<number>5</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="16" start="false" img="room_mind" />
+		<oxygen power="1" room="7" start="true" img="room_oxygen" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="14" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="5" start="true" max="8" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>2</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="4" start="true" />
+		<temporal power="1" room="8" start="false" />
+		<weapons power="1" max="1" room="1" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="2" count="4">
+		<weapon name="ARC_TRADE_EXPAND2" />
+		<weapon name="ARC_TRADE_EXPAND3" />
+		<weapon name="ARC_TRADE_EXPAND2" />
+		<weapon name="ARC_TRADE_EXPAND3" />
+	</weaponList>
+	<droneList drones="6" count="2">
+		<drone name="DEFENSE_1" />
+	</droneList>
+	<health amount="40" />
+	<maxPower amount="7" />
+	<crewCount amount="1" class="human" />
+	<crewCount amount="1" class="rock_outcast" />
+	<crewCount amount="1" class="fm_plated" />
+</shipBlueprint>
+

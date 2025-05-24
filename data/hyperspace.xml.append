@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mod:findLike type="ships" limit="1">
+	<mod-append:ship name="PLAYER_SHIP_FFF_CARGO_FREIGHTER" a="true" b="false" c="false" />
+	<mod-append:customShip name="PLAYER_SHIP_FFF_CARGO_FREIGHTER">
+		<crewLimit>8</crewLimit>
+		<systemLimit>8</systemLimit>
+	</mod-append:customShip>
+</mod:findLike>
+
