@@ -13,3 +13,6 @@
 	<computerGlow x="40" y="0" dir="UP" />
 </roomLayout>
 
+<roomLayout name="heartship/engines_heart">
+	<computerGlow x="40" y="18" dir="UP" />
+</roomLayout>

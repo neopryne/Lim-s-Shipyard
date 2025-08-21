@@ -46,14 +46,15 @@ if (Test-Path $relativeFile) {
 $ftlmanDir = "C:\Users\GunBuild-1\Documents\Workspace\ftlman-x86_64-pc-windows-gnu\ftlman"
 Push-Location $ftlmanDir
 .\ftlman.exe patch `
-    "Multiverse 5.4.5 - Assets (Patch above Data).zip" `
-    "Multiverse 5.4.6 - Data.zip" `
+    "Multiverse 5.5 - Assets (Patch above Data).zip" `
+    "Multiverse 5.5 - Data.zip" `
 	"Brightness Particles 1.4.1.zip" `
 	"Fusion.zip" `
     "Lightweight Lua.zip" `
 	"Forgemaster 0.6.1.2.2.zip" `
     "FTL-Trading-System-0.12.zip" `
-    $relativeFile
+    $relativeFile `
+    "Print_Mouse_Position.zip"
 Pop-Location
 
 # Launch FTL

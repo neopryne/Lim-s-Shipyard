@@ -53,7 +53,7 @@
 		</shields>
 		<teleporter power="1" room="4" start="true" />
 		<temporal power="1" room="8" start="false" />
-		<weapons power="1" max="1" room="1" start="true" img="room_weapons">
+		<weapons power="0" max="0" room="1" start="true" img="room_weapons">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
@@ -62,19 +62,96 @@
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList missiles="2" count="4">
+	<weaponList missiles="9" count="4">
 		<weapon name="ARC_TRADE_EXPAND2" />
 		<weapon name="ARC_TRADE_EXPAND3" />
 		<weapon name="ARC_TRADE_EXPAND2" />
 		<weapon name="ARC_TRADE_EXPAND3" />
 	</weaponList>
-	<droneList drones="6" count="2">
+	<droneList drones="9" count="2">
 		<drone name="DEFENSE_1" />
 	</droneList>
+	<crew>
+		<human room="0"/>
+		<rock_outcast room="6"/>
+		<fm_plated room="5"/>
+	</crew>
 	<health amount="40" />
 	<maxPower amount="7" />
-	<crewCount amount="1" class="human" />
-	<crewCount amount="1" class="rock_outcast" />
-	<crewCount amount="1" class="fm_plated" />
+	<aug name="CRATE_SCRAP" />
 </shipBlueprint>
 
+<shipBlueprint name="PLAYER_SHIP_LIM_UNDERTALE" layout="limrix_underheart" img="limrix_underheart">
+	<class>Mercy</class>
+	<name>The Heavy Heart</name>
+	<desc>The void inside may seem empty, but really, it is quite full...&#xD;
+Always has 100% evasion, starts with 50% hull, system, and ion resist.  Control the heart with the arrow keys.  Getting hit deals one system and one hull.</desc>
+	<systemList>
+		<battery power="1" room="11" start="true" img="heartship/room_battery_heart" />
+		<cloaking power="1" room="13" start="true" img="heartship/room_cloaking_heart" />
+		<clonebay power="1" room="5" start="true">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="3" start="true" img="heartship/room_doors_heart">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="2" room="15" start="false" img="heartship/room_drones_heart" />
+		<engines power="2" room="8" start="true" img="heartship/room_engines_heart">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="0" start="false" img="heartship/room_hacking_heart" />
+		<medbay power="1" room="5" start="true" img="heartship/room_medbay_heart">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="14" start="false" img="heartship/room_mind_heart" />
+		<oxygen power="1" room="2" start="true" img="heartship/room_oxygen_heart" />
+		<pilot power="1" room="6" start="true" img="heartship/room_pilot_heart">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="12" start="true" img="heartship/room_sensors_heart">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="7" start="false" img="heartship/room_shields_heart">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="16" start="false" />
+		<temporal power="1" room="1" start="false" />
+		<weapons power="2" room="4" start="true" img="heartship/room_weapons_heart">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="3" count="3">
+		<weapon name="LASER_BURST_2" />
+		<weapon name="BEAM_1" />
+	</weaponList>
+	<droneList drones="4" count="3">
+		<drone name="ROOMBA_DEFEND" />
+	</droneList>
+	<health amount="20" />
+	<maxPower amount="6" />
+	<crewCount amount="1" class="human" />
+</shipBlueprint>

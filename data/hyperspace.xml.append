@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<mod:findLike type="scripts">
+	<mod-append:script>data/lim_ship_scripts/undertale_heart.lua</mod-append:script>
+</mod:findLike>
+
 <mod:findLike type="ships" limit="1">
 	<mod-append:ship name="PLAYER_SHIP_FFF_CARGO_FREIGHTER" a="true" b="false" c="false" />
 	<mod-append:customShip name="PLAYER_SHIP_FFF_CARGO_FREIGHTER">
+		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+		<hiddenAug>ARC_TRADE_LICENSE_CIV</hiddenAug>
+		<hiddenAug>ARC_TRADE_LICENSE_OUT</hiddenAug>
+		<crewLimit>9</crewLimit>
+		<systemLimit>9</systemLimit>
+	</mod-append:customShip>
+	
+	<mod-append:ship name="PLAYER_SHIP_LIM_UNDERTALE" a="true" b="false" c="false" />
+	<mod-append:customShip name="PLAYER_SHIP_LIM_UNDERTALE">
+		<hiddenAug>FM_CRUCIBLE_PLATING_PLAYER</hiddenAug>
+		<hiddenAug>FM_CRUCIBLE_PLATING_PLAYER</hiddenAug>
 		<crewLimit>8</crewLimit>
 		<systemLimit>8</systemLimit>
 	</mod-append:customShip>
